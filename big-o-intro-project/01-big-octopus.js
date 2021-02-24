@@ -33,16 +33,31 @@ function quadraticBiggestFish(fishes) {
   return longestFish
 }
 
-console.log(quadraticBiggestFish(fishies))
+
+
+
 
 function nlognBiggestFish(fishes) {
-  // Code goes here ...
+  let sortedFishes = fishes.sort((a, b) => a.length - b.length);
+  // console.log(sortedFishes);
+  return sortedFishes[sortedFishes.length - 1];
 }
+
+
 
 
 function linearBiggestFish(fishes) {
-  // Code goes here ...
+  let longestFish = '';
+
+  for (let i = 0; i < fishes.length; i++) {
+    if (fishes[i].length > longestFish.length) {
+      longestFish = fishes[i];
+    }
+  }
+  return longestFish;
 }
+
+console.log(linearBiggestFish(fishies));
 
 
 tilesArray = ["up", "right-up", "right", "right-down", "down", "left-down", "left", "left-up"]
