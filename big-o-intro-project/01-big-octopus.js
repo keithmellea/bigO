@@ -63,11 +63,7 @@ console.log(linearBiggestFish(fishies));
 tilesArray = ["up", "right-up", "right", "right-down", "down", "left-down", "left", "left-up"]
 function slowDance(direction, tilesArray) {
 
-  for (let i = 0; i < tilesArray.length; i++) {
-    if (direction === tilesArray[i]) {
-      return i;
-    }
-  }
+
 }
 
 
@@ -81,10 +77,6 @@ tilesObj = {
   "left": 6,
   "left-up": 7
 }
-
-
 function fastDance(direction, tilesObj) {
-  if (direction in tilesObj) return tilesObj[direction];
+  // Code goes here ...
 }
-console.log(fastDance("right-up", tilesObj));
-
