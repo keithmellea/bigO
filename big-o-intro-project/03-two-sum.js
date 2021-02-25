@@ -8,12 +8,17 @@ function badTwoSum(arr, targetSum) {
   }
   return false;
 }
-console.log(badTwoSum([1, 2, 3, 4], 7));
+console.log(badTwoSum([4, 2, 3, 1], 7));
 
 function okayTwoSum1(arr, targetSum) {
-  // Code goes here ...
+  arr = arr.sort();
+  let midIdx = Math.floor(arr.length / 2);
+  if (arr[midIdx])
+  //let pivot = targetSum;
+  let left = array
 }
 
+okayTwoSum1([4, 3, 1, 2], 7);
 
 function okayTwoSum2(arr, targetSum) {
   // Code goes here ...
